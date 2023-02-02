@@ -13,6 +13,7 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:react/jsx-runtime",
     "plugin:tailwindcss/recommended",
     "plugin:promise/recommended",
@@ -26,7 +27,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "simple-import-sort", "import", "tailwindcss", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "simple-import-sort", "import", "tailwindcss", "prettier"],
   "rules": {
     "no-console": "warn",
     "no-var": "error",
@@ -72,16 +73,7 @@
     "import/order": [
       "warn",
       {
-        "groups": [
-          "type",
-          "builtin",
-          "object",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index"
-        ],
+        "groups": ["type", "builtin", "object", "external", "internal", "parent", "sibling", "index"],
         "pathGroups": [
           {
             "pattern": "~/**",
