@@ -27,14 +27,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "simple-import-sort",
-    "import",
-    "tailwindcss",
-    "prettier"
-  ],
+  "plugins": ["react", "@typescript-eslint", "simple-import-sort", "import", "tailwindcss", "prettier"],
   "rules": {
     "no-console": "warn",
     "no-var": "error",
@@ -80,16 +73,7 @@
     "import/order": [
       "warn",
       {
-        "groups": [
-          "type",
-          "builtin",
-          "object",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index"
-        ],
+        "groups": ["type", "builtin", "object", "external", "internal", "parent", "sibling", "index"],
         "pathGroups": [
           {
             "pattern": "~/**",
