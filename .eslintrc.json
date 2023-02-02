@@ -13,7 +13,6 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:@typescript-eslint/recommended",
     "plugin:react/jsx-runtime",
     "plugin:tailwindcss/recommended",
     "plugin:promise/recommended",
@@ -27,14 +26,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "simple-import-sort",
-    "import",
-    "tailwindcss",
-    "prettier"
-  ],
+  "plugins": ["react", "simple-import-sort", "import", "tailwindcss", "prettier"],
   "rules": {
     "no-console": "warn",
     "no-var": "error",
